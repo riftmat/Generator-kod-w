@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
+    user-select: none;
 }
 
 body {
@@ -44,10 +45,7 @@ h1 {
     border-top: none;
     background: white;
     box-shadow: 5px 15px 10px 10px;
-}
-
-.text {
-    margin-left: 15px;
+    border-radius: 0 0 10px 10px;
 }
 
 .text textarea {
@@ -55,7 +53,11 @@ h1 {
     max-height: 100px;
     min-width: 50px;
     min-height: 20px;
+    height: 55px;
     text-align: left;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .options {
@@ -65,19 +67,27 @@ h1 {
     padding: 5px;
 }
 
-.smal, .big, .number, .special, .lenght, .done {
+.big, .number, .special, .lenght, .done {
     max-width: 250px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.smal input, .big input, .number input, .special input, .lenght input, .done input {
+.big input, .number input, .special input, .lenght input, .done input {
     margin-right: 10px;
+    width: 15px;
+    height: 15px;
 } 
 
 .lenght input {
     width: 50px;
+    font-size: 14px;
+    height: 20px;
+}
+
+.lenght p {
+    text-align: center;
 }
 
 .done input {
@@ -100,12 +110,20 @@ footer {
     min-width: 100px;
     max-width: 450px;
     display: flex;
-    align-items: center;
     position: absolute;
     bottom: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
     font-size: 12px;
     margin: 5px;
+    text-align: center;
+}
+
+footer b {
+    margin-left: 5px;
 }
