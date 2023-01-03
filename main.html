@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Patryk Lachowicz">
+    <title>Generator kodu</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Generator hasła</h1>
+        <div class="main-container">
+            <div class="text">
+                <textarea id="resu"></textarea>
+            </div>
+            <div class="options">
+                <div class="big">
+                    <input type="checkbox" id="ABC" checked><p>ABC</p>
+                </div>
+                <div class="number">
+                    <input type="checkbox" id="num"><p>123</p>
+                </div>
+                <div class="special">
+                    <input type="checkbox" id="!@#"><p>!@#</p>
+                </div>
+                <div class="lenght">
+                    <input type="number" min="5" max="50" id="lenght" value="5"><p>Wybierz długość hasła</p>
+                </div>
+                <div class="done">
+                    <input type="button" value="Generuj hasło" id="done">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Autor:<b>Patryk Lachowicz</b></p>
+        <p>Generator nie spełnia wymogów bezpieczeństwa, został stworzony jedynie w celach demonstracyjnych</p>
+    </footer>
+</body>
+</html>
