@@ -33,9 +33,6 @@ btn.addEventListener("click", () => {
 });
 
     //loop that checks if inputs are checked and generates password acording to selected options
-    /* i = -100 because if i = 0 and non of the inputs are checked it only generates 2 values.
-    Max user input is set to 50 so double the amount of values is enough to meet max and min user input
-    */
 function generatePassword(number, symbol, size, length) {
     const lenghtTwo = passLength.value * 2;
     let generatedPassword = "";
