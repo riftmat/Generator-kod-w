@@ -37,10 +37,11 @@ btn.addEventListener("click", () => {
     Max user input is set to 50 so double the amount of values is enough to meet max and min user input
     */
 function generatePassword(number, symbol, size, length) {
+    const lenghtTwo = passLength.value * 2;
     let generatedPassword = "";
     let variations = [number, symbol, size].length;
 
-    for (let i = -100; i < length; i += variations) {
+    for (let i = -lenghtTwo; i < length; i += variations) {
         if (number) {
             generatedPassword += RandomNumber();
         }
